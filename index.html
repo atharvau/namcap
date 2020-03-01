@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<head >
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body style="overflow-x:hidden" >
+
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+      <br/>
+      <h1 class="display-2">AI PACMAN</h1>
+
+      <br/>
+      <h1 style="font-size:30px" class="display-4"> Dr S S Aote</h1>
+      <br/>
+      <h1 style="font-size:30px"  class="display-4">Atharva Udapure - Shreejit Shivdekar</h1>
+
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h1>Shortest Path Strategies</h1>
+        <br/>  
+        <hr/>
+        <h4>Simple Astar Algorithm</h4>
+          For Optimal 
+          <br/>
+          <br/>
+
+          <ul class="list-group">
+            <li class="list-group-item">Breadth First Search</li>
+            <li class="list-group-item">AStar Algorithm</li>
+          </ul>
+          <br/>
+          <img width="800px" src="/Assets/annot.png"/>
+          <br/>
+          <br/>
+
+
+          <h4> Heuristic function </h4> 
+          <br/>
+
+           <i> h(Intermediate)= Manhattan( Pacman, Intermediate )</i>
+           <br/>
+
+           <i> g(Intermediate)= Manhattan( Intermediate, Goal )</i>
+           <br/>
+
+           <i> f(Intermediate)= h(Intermediate)+g(Intermediate)</i>
+           <br/>
+           <br/>
+
+
+           <img src="/Assets/hr.png">
+           <br/>
+
+           <br/>               <br/>
+
+
+           <div class="row">
+               <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item"><h4>Advantage</h4></li>
+                    <li class="list-group-item">Optimal Path</li>
+
+                  </ul>
+
+    
+               </div>
+              
+           </div>
+           <br/>
+           <br/><a href="/indexAstar.html">
+            <button type="button" class="btn btn-primary btn-lg btn-block"> DEMO ASTAR</button>
+
+           </a>
+           <hr/>
+
+
+    </div>
+
+</div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+        <br/>
+        <h1>Defensive Agent Strategies</h1>
+        <br/>  
+        <ul class="list-group">
+          <li class="list-group-item">Static Point</li>
+          <li class="list-group-item">Patrolling over Region</li>
+        </ul>
+        
+        <br/>
+        <br/>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/Assets/def.gif"/>
+            <br/>
+            <h4> Patrolling</h4>
+            <br/>
+
+            <ul class="list-group">
+              <li class="list-group-item">More Distance Covered</li>
+              <li class="list-group-item">More Eating Rate</li>
+            </ul>
+
+
+          </div>
+          <div class="col-md-6">
+            <img src="/Assets/defn.png"/>
+            <br/>
+            <h4> Static Point</h4>
+            <br/>
+            <ul class="list-group">
+              <li class="list-group-item">Less Distance Covered</li>
+              <li class="list-group-item">Less Eating Rate</li>
+            </ul>
+          </div>
+
+        </div>
+
+
+        <br/>
+<br/>
+
+
+
+
+
+
+        <a href="/indexDef.html">
+          <button type="button" class="btn btn-primary btn-lg btn-block"> DEMO DEFENSIVE PATROL </button>
+
+         </a>
+
+         <br/>
+
+
+
+
+
+
+
+
+   
+
+           </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+          
+
+
+
+
+            <br/>
+            <h1>Aggresive Agent Strategies</h1>
+            <br/>  
+            <ul class="list-group">
+              <!-- <li class="list-group-item">Static Point</li>
+              <li class="list-group-item">Patrolling over Region</li> -->
+            </ul>
+            <hr/>
+            <br/>
+            <h3>Simple Aggresive </h3>
+            <br/>
+            <img class="shadow-md" width="600px" src="/Assets/aggSim.gif"/>
+     
+
+            <br/>
+            <br/>
+
+            Sorts the Food According to Distance from the pacman
+            <br/>
+
+            Calcalates the shortest path to shortest food using A-Star algorithm 
+
+
+
+            <br/>
+            <br/>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                  <br/>
+                  <h4> Advantages</h4>
+                  <br/>
+  
+                  <ul class="list-group">
+                    <li class="list-group-item">Eats Near By Food Optimally </li>
+
+                  </ul>
+  
+  
+                </div>
+                <div class="col-md-6">
+                  <br/>
+                  <h4> Disadvantages</h4>
+                  <br/>
+                  <ul class="list-group">
+                    <li class="list-group-item">Death Rate 93%</li>
+                    <li class="list-group-item">Race Loop</li>
+                  </ul>
+                </div>
+  
+              </div>
+
+              <br/>
+              <a href="/indexSimpleAgg.html">
+                <button type="button" class="btn btn-primary btn-lg btn-block"> DEMO AGGRESIVE SIMPLE </button>
+      
+               </a>
+
+
+         
+              <br/>
+              <hr/>            <br/>
+
+              <h3>Simple Aggresive with Back Propogation </h3>            <br/>
+
+              <br/>
+              <img class="shadow-md" width="600px" src="/Assets/aggBack.gif"/>
+     
+
+              <br/>
+              <br/>
+  
+              Sorts the Food According to Distance from the pacman
+              <br/>
+              Back Tracks To Self Zone when the Ghost Attacks Them.
+              <br/>
+              
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <br/>
+                  <h4> Advantages</h4>
+                  <br/>
+  
+                  <ul class="list-group">
+                    <li class="list-group-item">Eats Near By Food </li>
+                    <li class="list-group-item">Avoid Race Loop </li>
+
+
+                  </ul>
+  
+  
+                </div>
+                <div class="col-md-6">
+                  <br/>
+                  <h4> Disadvantages</h4>
+                  <br/>
+                  <ul class="list-group">
+                    <li class="list-group-item">Death Rate 61%</li>
+                    <li class="list-group-item">Decrease in Eating Rate</li>
+
+                  </ul>
+                </div>
+  
+              </div>
+              <br/>
+              
+              <br/>
+              <a href="/indexBack.html">
+                <button type="button" class="btn btn-primary btn-lg btn-block"> DEMO AGGRESIVE BACK </button>
+      
+               </a>
+
+
+         
+              <br/>
+
+              <hr/>
+              <br/>
+
+              <h3>Aggressive with Avoidance </h3>
+              
+              <br/>
+              <br/>
+              <img class="shadow-md" width="600px" src="/Assets/opp.png"/>
+              <h4> Advantages</h4>
+              <br/>
+
+              <ul class="list-group">
+                <li class="list-group-item">Increases Eat Rate </li>
+                <li class="list-group-item">Avoids Pacman </li>
+
+
+              </ul>
+
+
+              <br/>
+              
+              <a href="/indexAvoid.html">
+                <button type="button" class="btn btn-primary btn-lg btn-block"> DEMO AGGRESIVE AVOID </button>
+      
+               </a>
+              <hr/>
+
+
+            <br/>
+         
+
+
+               </div>
+
+
+
+
+
+       
+
+               </div>
+
+
+        </div>
+
+    </div>
+
+
+    
+  
+
+
+
+    <script src="doc.js"></script>
+
+
+
+</body>
+</html>

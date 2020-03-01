@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head >
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser-arcade-physics.min.js"></script> 
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+
+<body style="overflow: hidden;">
+
+    <canvas id="game" width="1200" height="1000"></canvas>
+    <button  style="z-index: 4;position:absolute;" onclick='stop_index()'>stop</button>
+
+    <script src="learning.js"></script>
+
+    <script src="Utils.js"></script>
+    <script src="Pacman.js"></script>
+    <script src="Food.js"></script>
+    <script src="binaryheap.js"></script>
+    <script src="graph.js"></script>
+    <script src="astar.js"></script>
+
+    <script src="layparser.js"></script>
+    <script id="index" src="indexAvoid.js">
+        
+   
+
+    
+    </script>
+     <script>
+        function stop_index(){
+    
+    ingame=!ingame    
+}
+        </script>
+
+</body>
+</html>
